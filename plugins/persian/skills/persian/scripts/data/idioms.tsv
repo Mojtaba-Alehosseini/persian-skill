@@ -1,0 +1,38 @@
+# idioms.tsv  -  EN idiom/phrase  ->  idiomatic FA.  Seed set (hand-curated + pitfalls-derived).
+# Extend with PersianIdioms (Rezaeimanesh, NAACL 2025, ~2,200 entries) - see ../../NOTICE.
+# format: EN 	 FA 	 note
+to my name	در بساط داشتن / به نامِ من	anchor to a concrete noun, e.g. حسابی بانکی (P37)
+establish ourselves	به جایی رسیدن	ambition idiom, not «خود را تثبیت کردن» (P40)
+make it	به جایی رسیدن	
+my turn came	نوبت به من رسید	(P42)
+on a budget	حواسم بود چقدر خرج می‌کنم	behavior clause, not «با بودجه» (P44)
+perfect timing	چه به‌موقع!	stock exclamation, don't calque (P13)
+break the ice	یخِ مجلس را شکستن	
+once in a blue moon	سالی به دوازده ماه	
+piece of cake	مثلِ آب خوردن	
+hit the road	راه افتادن / بزن بریم	
+get the hang of it	دستش آمدن	
+out of the blue	یک‌دفعه / بی‌مقدمه	
+under the weather	دمغ بودن / حالم خوش نیست	
+cost an arm and a leg	کلی آب خوردن / خرج روی دست گذاشتن	
+call it a day	بسه برای امروز / تعطیلش کنیم	
+make up your mind	تصمیمت را بگیر	
+lose your temper	از کوره در رفتن	
+keep an eye on	حواست به ... باشد	
+take it for granted	قدر ندانستن	
+get on someone's nerves	روی اعصاب رفتن	
+a blessing in disguise	توفیقِ اجباری	
+bite the bullet	دل به دریا زدن	
+the last straw	کاسهٔ صبر را لبریز کردن	
+speak of the devil	حلال‌زاده	
+butterflies in my stomach	دلشوره داشتن	
+pull yourself together	خودت را جمع‌وجور کن	
+in the same boat	هم‌درد بودن	
+beat around the bush	طفره رفتن / حاشیه رفتن	
+better late than never	دیر رسیدن بهتر از هرگز نرسیدن	
+go on, now	بزن بِچاک / برو دیگر	casual register (P8)
+here you are	بفرما / بفرمایید	handing something over (NOT «اینک» = now/behold)
+no pain no gain	کجا دیدی که بی‌آتش کسی را بوی عود آمد؟	proverb
+sword of Damocles	شمشیر داموکلس / اجلِ معلّق	
+generation and degeneration	کون و فساد	philosophical term
+Father Confessor	اِقرارنیوشِ کلیسا	

@@ -1,0 +1,4 @@
+# Python bytecode — regenerated whenever the scripts are imported (e.g. by tests).
+# Never ship these in the skill bundle.
+__pycache__/
+*.pyc

@@ -1,0 +1,119 @@
+{
+  "skill_name": "persian",
+  "notes": "Assertions are objectively checkable statements for grading. Mechanics evals (route C) are fully scriptable via persian_lint; translation evals mix scriptable checks (entities/digits present) with judgment checks (idiomatic, register).",
+  "evals": [
+    {
+      "id": 1,
+      "route": "A (EN->FA, literary memoir)",
+      "prompt": "Translate this into Persian in a literary, first-person memoir register: \"I left India in 1964 with a certificate in commerce and the equivalent, in those days, of ten dollars to my name.\"",
+      "expected_output": "Idiomatic literary Persian. 'to my name' recast to a concrete possession (e.g. حسابی بانکی) rather than «ده دلار پول»; 1964 -> ۱۹۶۴; faithful; mechanically clean (ZWNJ, «»).",
+      "assertions": [
+        "Output is Persian prose in a literary/memoir register.",
+        "'1964' is rendered with Persian digits «۱۹۶۴».",
+        "'ten dollars to my name' is anchored to a concrete noun (e.g. «حسابی بانکی معادل ده دلار»), NOT the flat «ده دلار پول».",
+        "No Arabic letters ي/ك remain; «» guillemets used for any quotes; ZWNJ used where required."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "route": "A (EN->FA, casual dialogue)",
+      "prompt": "Translate to Persian and keep the dialogue casual and colloquial, the way a real person speaks: \"Go on, now,\" he said. \"This is grown-ups' time. Go read one of your books.\"",
+      "expected_output": "Colloquial register (e.g. «بزن بچاک»/«برو دیگر»), dialogue tag flattened to «گفت», natural spoken Persian — not flat literal calque.",
+      "assertions": [
+        "Dialogue reads as natural spoken/colloquial Persian, not a word-for-word calque.",
+        "The tag 'he said' is flattened to «گفت» (no ornate manner verb).",
+        "Quoted speech uses «» guillemets and is mechanically clean."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "route": "B (FA->EN)",
+      "prompt": "Translate this Persian sentence into natural English: «همزمان با صدای بوقِ مایکروفر، برق رفت و موسیقی قطع شد.»",
+      "expected_output": "Faithful, natural English; 'the lights went out' / 'the music stopped'; meaning preserved both directions.",
+      "assertions": [
+        "Output is natural English (not a calque).",
+        "'برق رفت' becomes 'the lights/power went out' (not 'electricity left').",
+        "'موسیقی قطع شد' becomes 'the music stopped/cut out'.",
+        "No content added or dropped vs. the Persian source."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "route": "C (mechanics only — fully scriptable)",
+      "prompt": "Fix the Persian formatting/typography in this text (don't translate it): او مي رود و كتاب ها روي ميز است ، و بزرگ ترين آرزو همين بود 1964 .",
+      "expected_output": "Mechanics only via persian_lint: ي->ی, ك->ک, ZWNJ for «می‌رود»/«کتاب‌ها»/«بزرگ‌ترین», 1964->۱۹۶۴, spacing around «،» fixed. No translation, no re-wording.",
+      "assertions": [
+        "Contains «می‌رود» joined with ZWNJ (U+200C) — not «می رود» and not «میرود».",
+        "Contains «کتاب‌ها» with ZWNJ.",
+        "Contains «بزرگ‌ترین» with ZWNJ.",
+        "No Arabic ي or ك remain (all converted to ی/ک).",
+        "'1964' converted to «۱۹۶۴».",
+        "No space before «،»; wording is otherwise unchanged (no translation)."
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "route": "E (idiom lookup)",
+      "prompt": "I'm writing in Persian and need a natural equivalent for the idiom 'it cost an arm and a leg' — please don't translate it word for word.",
+      "expected_output": "An idiomatic Persian equivalent such as «کلی آب خورد» / «خرج روی دستم گذاشت», with a note that a literal calque is wrong.",
+      "assertions": [
+        "Gives an idiomatic Persian equivalent (e.g. «کلی آب خورد» / «خرج روی دستم گذاشت»), not a literal body-parts calque.",
+        "Explicitly flags that a word-for-word translation would be wrong."
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "route": "A (fidelity — no softening/censoring)",
+      "prompt": "Translate this faithfully into Persian: \"They opened a bottle of wine and drank until he got drunk.\"",
+      "expected_output": "Complete, accurate rendering: شراب and مست both present; nothing omitted or softened.",
+      "assertions": [
+        "Contains «شراب» (wine) — not omitted, swapped for juice, or softened.",
+        "Contains «مست» (drunk) — not omitted or softened.",
+        "Meaning is complete and uncensored relative to the source."
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "route": "C (mechanics with digit-policy override)",
+      "prompt": "Normalize this Persian but keep the numbers in Latin digits — it's going into a code sample: نسخه 2 و سال 1990 و كتاب ها روي ميز.",
+      "expected_output": "ك->ک, ي->ی, «کتاب‌ها» ZWNJ, spacing fixed — but digits stay Latin (2, 1990) because the user asked to keep Latin digits (persian_lint --digits keep/latin).",
+      "assertions": [
+        "Arabic ك/ي converted to ک/ی and «کتاب‌ها» joined with ZWNJ.",
+        "Latin digits 2 and 1990 are PRESERVED (not converted to ۲/۱۹۹۰), honoring the explicit request.",
+        "No translation performed."
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "route": "C (standalone multi-line clean — quotes/semicolon/question)",
+      "prompt": "Clean up the typography of this Persian paragraph, don't translate it: او گفت \"سلام\" و رفت . كتاب ها روي ميز بود ; ساعت 10 صبح بود ؟",
+      "expected_output": "Straight quotes -> «…»; ; -> «؛»; ? -> «؟»; ك/ي fixed; «کتاب‌ها» ZWNJ; 10 -> ۱۰; spacing around punctuation normalized; no translation.",
+      "assertions": [
+        "Straight quotes \"…\" converted to «…».",
+        "';' converted to «؛» and '?' to «؟», with correct spacing (no space before, one space after).",
+        "ك->ک, ي->ی; «کتاب‌ها» joined with ZWNJ; '10' -> «۱۰».",
+        "Persian content is preserved verbatim (no translation or rewording)."
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "route": "A (unit policy — must ask, per skill rule)",
+      "prompt": "Translate to Persian: 'It snowed three feet that winter.'",
+      "expected_output": "Faithful Persian; because the text has a meaningful measurement and no unit policy was given, the skill should ASK or offer options (metric / keep original / both) rather than silently converting. If converted, three feet ≈ «حدود یک متر» (P19), applied consistently.",
+      "assertions": [
+        "Either asks the user about unit policy OR explicitly offers the options (metric / original / both) before committing — does not silently drop the measurement.",
+        "Any conversion is numerically sensible (three feet ≈ ~1 meter) and consistent.",
+        "The rest of the sentence is idiomatic Persian."
+      ],
+      "files": []
+    }
+  ]
+}
