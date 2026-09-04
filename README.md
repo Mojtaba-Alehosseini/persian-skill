@@ -1,6 +1,6 @@
-# persian — Claude skill for Persian (Farsi) translation & text mechanics
+# persian: Claude skill for Persian (Farsi) translation & text mechanics
 
-Make Claude translate **English ↔ Persian** like a skilled human — idiomatic, register-matched, and faithful — **and** fix the small mechanical things that make Persian look right: right-to-left layout, the half-space (ZWNJ / نیم‌فاصله), correct Persian letters instead of their Arabic look‑alikes, Persian digits, and proper punctuation.
+Make Claude translate **English ↔ Persian** like a skilled human (idiomatic, register-matched, faithful) **and** fix the small mechanical things that make Persian look right: right-to-left layout, the half-space (ZWNJ / نیم‌فاصله), correct Persian letters instead of their Arabic look‑alikes, Persian digits, and proper punctuation.
 
 > Two jobs in one skill: **translation craft** (judgment) + **Persian text mechanics** (deterministic, done by a script).
 
@@ -8,12 +8,12 @@ Make Claude translate **English ↔ Persian** like a skilled human — idiomatic
 
 ## Why it's different
 
-Most "Persian mode" output reads like *machine Persian* — word-for-word calques, Arabic letters (ي/ك), missing half-spaces, Latin digits. This skill fixes both halves:
+Most "Persian mode" output reads like *machine Persian*: word-for-word calques, Arabic letters (ي/ك), missing half-spaces, Latin digits. This skill fixes both halves:
 
-- **Craft** — a catalog of 56 calibrated pitfalls (passive→impersonal active, it‑clefts, dialogue register, collocations…) with worked EN↔FA examples and review "lenses."
-- **Mechanics** — a deterministic linter (`persian_lint.py`) that normalizes letters, ZWNJ, digits, punctuation and spacing; safe and idempotent, and it protects code/URLs/version numbers.
+- **Craft**: a catalog of 56 calibrated pitfalls (passive→impersonal active, it‑clefts, dialogue register, collocations…) with worked EN↔FA examples and review "lenses."
+- **Mechanics**: a deterministic linter (`persian_lint.py`) that normalizes letters, ZWNJ, digits, punctuation and spacing; safe and idempotent, and it protects code/URLs/version numbers.
 
-It also works **without translating** — point it at messy Persian and it just cleans it up.
+It also works **without translating**: point it at messy Persian and it just cleans it up.
 
 ---
 
@@ -24,7 +24,7 @@ It also works **without translating** — point it at messy Persian and it just 
 /plugin install persian@persian-skill
 ```
 
-Then just ask normally — e.g. "translate this to Persian," "fix the نیم‌فاصله in this text," or "what's the natural Persian for *it cost an arm and a leg*."
+Then just ask normally, for example "translate this to Persian," "fix the نیم‌فاصله in this text," or "what's the natural Persian for *it cost an arm and a leg*."
 
 ---
 
@@ -46,7 +46,7 @@ EN:  "Go on, now," he said.
 FA:  گفت: «بزن بِچاک.»        ← spoken register, not «برو دیگر، حالا»
 ```
 
-**Right‑to‑left file output:** when it writes a Word/PDF/HTML file, it sets RTL direction, right (leading) alignment, and a Persian‑capable font — so the page looks native, not just "Persian text on a left-aligned page."
+**Right‑to‑left file output:** when it writes a Word/PDF/HTML file, it sets RTL direction, right (leading) alignment, and a Persian‑capable font, so the page looks native, not just "Persian text on a left-aligned page."
 
 ---
 
@@ -68,20 +68,20 @@ skills/persian/
 └── evals/evals.json            # test cases
 ```
 
-The scripts are pure Python standard library — no dependencies.
+The scripts are pure Python standard library with no dependencies.
 
 ---
 
 ## Extending the term banks
 
-`scripts/data/idioms.tsv` and `glossary.tsv` are small, hand-curated seeds (format: `EN <TAB> FA <TAB> note`). Add rows to grow coverage — `lookup.py` surfaces only the entries that appear in a given source text, so the banks can scale without bloating context. See `NOTICE` for open-source banks you can ingest.
+`scripts/data/idioms.tsv` and `glossary.tsv` are small, hand-curated seeds (format: `EN <TAB> FA <TAB> note`). Add rows to grow coverage; `lookup.py` surfaces only the entries that appear in a given source text, so the banks can scale without bloating context. See `NOTICE` for open-source banks you can ingest.
 
 ---
 
 ## Contributing
 
-Issues and PRs welcome — especially new pitfalls, gold exemplars, and term/idiom rows. Run the linter's built-in checks before submitting.
+Issues and PRs are welcome, especially new pitfalls, gold exemplars, and term/idiom rows. Run the linter's built-in checks before submitting.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT; see [LICENSE](LICENSE).
