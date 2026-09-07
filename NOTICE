@@ -1,0 +1,27 @@
+# NOTICE: data sources, licensing, attribution
+
+The persian skill bundles small, hand-curated seed data and is designed to scale by ingesting the
+open-source banks below into `scripts/data/*.tsv` (format: EN <TAB> FA <TAB> note).
+
+## Currently bundled (seed, hand-curated)
+- `scripts/data/idioms.tsv`, `scripts/data/glossary.tsv`: term/idiom pairs authored for this
+  skill. No third-party text is redistributed.
+
+## Approved for bundling (ingest to scale): verify each license at ingest time
+- **PersianIdioms / Idiom_Translation** (Rezaeimanesh et al., NAACL 2025): ~2,200 FA idioms
+  with meanings + EN↔FA idiom sentence pairs. Source for `idioms.tsv`.
+  https://github.com/sara-rezaeimanesh/idiom_translation · https://aclanthology.org/2025.naacl-long.405/
+- **English-Persian Word Database**: large EN→FA word list, DB-ready. Source for `glossary.tsv`.
+  https://github.com/semnan-university-ai/English-Persian-Word-Database
+- **EnglishToPersianDictionaries**: aggregated EN→FA dictionaries.
+  https://github.com/VahidN/EnglishToPersianDictionaries
+- **Wiktionary (via kaikki.org)**: EN headwords with FA glosses + idioms. **License: CC-BY-SA.**
+  If ingested, the skill must (a) attribute Wiktionary/kaikki and (b) share-alike any
+  redistributed derivative. Tag CC-BY-SA-derived rows so the obligation stays traceable.
+
+## Reference only: DO NOT bundle (consult/cite at runtime)
+- **FarsNet** (Persian WordNet, SBU): request/license.
+- **Hayyim New Persian–English Dictionary** (DSAL / U. Chicago): online.
+- **Aryanpour / Abadis (آبادیس)**: online lookup.
+- **LIDIOMS**: multilingual linked idioms (academic).
+- **ELRA English–Persian idioms DB**: licensed/paid.

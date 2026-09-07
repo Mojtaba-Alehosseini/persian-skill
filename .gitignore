@@ -1,4 +1,6 @@
+# Python bytecode, regenerated whenever the scripts are imported (e.g. by the tests).
 __pycache__/
 *.pyc
-.DS_Store
-*.bak
+# packaged zips are built from the tree, not committed
+persian.zip
+persian.skill

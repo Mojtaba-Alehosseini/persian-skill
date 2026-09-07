@@ -1,0 +1,145 @@
+{
+  "skill_name": "persian",
+  "notes": "Assertions are objectively checkable statements for grading. Mechanics evals (route C) are fully scriptable via persian_lint; translation evals mix scriptable checks (entities/digits present) with judgment checks (idiomatic, register, no AI tells).",
+  "evals": [
+    {
+      "id": 1,
+      "route": "A (EN->FA, literary memoir)",
+      "prompt": "Translate this into Persian in a literary, first-person memoir register: \"I left India in 1964 with a certificate in commerce and the equivalent, in those days, of ten dollars to my name.\"",
+      "expected_output": "Idiomatic literary Persian. 'to my name' rendered with the Persian idiom «دار و ندار» (e.g. «همهٔ دار و ندارم ده دلار بود»), not the flat «ده دلار پول» and not an invented referent like a bank account; 1964 -> ۱۹۶۴; faithful; mechanically clean (ZWNJ, «»).",
+      "assertions": [
+        "Output is Persian prose in a literary/memoir register.",
+        "'1964' is rendered with Persian digits «۱۹۶۴».",
+        "'ten dollars to my name' uses «دار و ندار» or an equivalent 'all I owned' idiom; it does NOT add a referent absent from the source (bank account, wallet) and is NOT the flat «ده دلار پول».",
+        "No Arabic letters ي/ك remain; «» guillemets used for any quotes; ZWNJ used where required."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "route": "A (EN->FA, casual dialogue)",
+      "prompt": "Translate to Persian and keep the dialogue casual and colloquial, the way a real person speaks: \"Go on, now,\" he said. \"This is grown-ups' time. Go read one of your books.\"",
+      "expected_output": "Colloquial spoken register (e.g. «برو دیگه، یالا» / «بزن بچاک»), dialogue tag flattened to «گفت», spoken verb forms, not a flat literal calque.",
+      "assertions": [
+        "Dialogue reads as natural spoken/colloquial Persian, not a word-for-word calque («برو دیگر، حالا» fails).",
+        "The tag 'he said' is flattened to «گفت» (no ornate manner verb).",
+        "Quoted speech uses «» guillemets and is mechanically clean."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "route": "B (FA->EN)",
+      "prompt": "Translate this Persian sentence into natural English: «همزمان با صدای بوقِ مایکروفر، برق رفت و موسیقی قطع شد.»",
+      "expected_output": "Faithful, natural English; 'the lights/power went out' and 'the music stopped/cut out'; meaning preserved.",
+      "assertions": [
+        "Output is natural English (not a calque).",
+        "'برق رفت' becomes 'the lights/power went out' (not 'electricity left').",
+        "'موسیقی قطع شد' becomes 'the music stopped/cut out'.",
+        "No content added or dropped vs. the Persian source."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "route": "C (mechanics only, fully scriptable)",
+      "prompt": "Fix the Persian formatting/typography in this text (don't translate it): او مي رود و كتاب ها روي ميز است ، و بزرگ ترين آرزو همين بود 1964 .",
+      "expected_output": "Mechanics only via persian_lint: ي->ی, ك->ک, ZWNJ for «می‌رود»/«کتاب‌ها»/«بزرگ‌ترین», 1964->۱۹۶۴, spacing around «،» and «.» fixed. No translation, no re-wording.",
+      "assertions": [
+        "Contains «می‌رود» joined with ZWNJ (U+200C), not «می رود» and not «میرود».",
+        "Contains «کتاب‌ها» with ZWNJ.",
+        "Contains «بزرگ‌ترین» with ZWNJ.",
+        "No Arabic ي or ك remain (all converted to ی/ک).",
+        "'1964' converted to «۱۹۶۴».",
+        "No space before «،» or the final period; wording is otherwise unchanged (no translation)."
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "route": "E (idiom lookup)",
+      "prompt": "I'm writing in Persian and need a natural equivalent for the idiom 'it cost an arm and a leg', please don't translate it word for word.",
+      "expected_output": "An idiomatic Persian equivalent such as «کلی آب خورد» / «خرج روی دستم گذاشت», with a note that a literal calque is wrong.",
+      "assertions": [
+        "Gives an idiomatic Persian equivalent (e.g. «کلی آب خورد» / «خرج روی دستم گذاشت»), not a literal body-parts calque.",
+        "Explicitly flags that a word-for-word translation would be wrong."
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "route": "A (fidelity, no softening)",
+      "prompt": "Translate this faithfully into Persian: \"They opened a bottle of wine and drank until he got drunk.\"",
+      "expected_output": "Complete, accurate rendering: شراب and مست both present; nothing omitted or softened.",
+      "assertions": [
+        "Contains «شراب» (wine), not omitted, swapped for juice, or softened to «نوشیدنی».",
+        "Contains «مست» (drunk), not omitted or softened.",
+        "Meaning is complete and uncensored relative to the source."
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "route": "C (mechanics with digit-policy override)",
+      "prompt": "Normalize this Persian but keep the numbers in Latin digits, it's going into a code sample: نسخه 2 و سال 1990 و كتاب ها روي ميز.",
+      "expected_output": "ك->ک, ي->ی, «کتاب‌ها» ZWNJ, spacing fixed, but digits stay Latin (2, 1990) because the user asked (persian_lint --digits keep).",
+      "assertions": [
+        "Arabic ك/ي converted to ک/ی and «کتاب‌ها» joined with ZWNJ.",
+        "Latin digits 2 and 1990 are PRESERVED (not converted to ۲/۱۹۹۰), honoring the explicit request.",
+        "No translation performed."
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "route": "C (mixed Persian + English, quotes/semicolon/question)",
+      "prompt": "Clean up the typography of this text, don't translate it: او گفت \"سلام\" و رفت . كتاب ها روي ميز بود ; ساعت 10 صبح بود ؟ Then he asked, \"Are you sure?\" and left.",
+      "expected_output": "Persian part: straight quotes -> «…»; ; -> «؛»; ? -> «؟»; ك/ي fixed; «کتاب‌ها» ZWNJ; 10 -> ۱۰; spacing normalized. English sentence keeps its own comma, quotes, and question mark.",
+      "assertions": [
+        "Persian straight quotes \"سلام\" converted to «سلام».",
+        "';' converted to «؛» and the Persian '?' to «؟», with correct spacing (no space before, one space after).",
+        "ك->ک, ي->ی; «کتاب‌ها» joined with ZWNJ; '10' -> «۱۰».",
+        "The English sentence 'Then he asked, \"Are you sure?\" and left.' is unchanged (Latin comma, quotes, and question mark kept).",
+        "Persian content is preserved verbatim (no translation or rewording)."
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "route": "A (unit policy: must ask)",
+      "prompt": "Translate to Persian: 'It snowed three feet that winter.'",
+      "expected_output": "Faithful Persian; because the text has a meaningful measurement and no unit policy was given, the skill should ASK or offer options (metric / keep original / both) rather than silently converting. If converted, three feet ≈ «حدود یک متر» (P19).",
+      "assertions": [
+        "Either asks the user about unit policy OR explicitly offers the options (metric / original / both) before committing; does not silently drop the measurement.",
+        "Any conversion is numerically sensible (three feet ≈ one meter) and consistent.",
+        "The rest of the sentence is idiomatic Persian."
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "route": "D (de-AI a Persian paragraph)",
+      "prompt": "This Persian paragraph sounds like ChatGPT wrote it. Rewrite it so it sounds like a person wrote it, keeping every fact: «لازم به ذکر است که این محصول دارای سه ویژگی کلیدی می‌باشد. این محصول نه تنها سریع، ساده و کارآمد است، بلکه توسط تیمی متخصص طراحی شده است. در نهایت، این محصول می‌تواند نقش مهمی در بهبود تجربهٔ کاربری ایفا کند.»",
+      "expected_output": "Plain modern Persian with the same facts: three features, fast/simple/efficient, designed by a specialist team, improves user experience. No «لازم به ذکر است», no «می‌باشد», no «دارای», no «توسط» passive, no «نه تنها … بلکه», no «در نهایت», no «نقش مهمی ایفا می‌کند». No new facts.",
+      "assertions": [
+        "Output contains none of: «لازم به ذکر است», «می‌باشد», «دارای», «توسط», «نه تنها», «در نهایت», «ایفا».",
+        "All facts survive: three features; fast, simple, efficient; a specialist team designed it; it improves user experience.",
+        "No fact, number, or claim is added that the source does not contain.",
+        "Uses simple verbs («دارد», «است», «طراحی کرده‌اند») and reads as natural modern Persian."
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "route": "A (passive -> impersonal active; «چرا»)",
+      "prompt": "Translate to Persian: \"The teachers were dragged out of the school and shot. 'Isn't that the day the war started?' she asked. 'Yes,' he said.\"",
+      "expected_output": "Impersonal active for the passive («معلم‌ها را … بیرون کشیدند و تیرباران کردند»), and «چرا» (not «بله») as the affirmative answer to the negative question.",
+      "assertions": [
+        "The passive 'were dragged out and shot' is rendered as third-plural active («…را بیرون کشیدند و … کردند»), not «کشیده شدند / کشته شدند».",
+        "The answer to the negative question is «چرا» (possibly «چرا، همان روز است»), not «بله».",
+        "Names/facts intact; dialogue uses «» and reads as spoken Persian."
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# idioms.tsv  -  EN idiom/phrase  ->  idiomatic FA.  Seed set (hand-curated + pitfalls-derived).
+# Rule: translate the function, not the words. Alternatives separated by " / ".
+# Extend with PersianIdioms (Rezaeimanesh, NAACL 2025, ~2,200 entries) - see NOTICE at skill root.
+# format: EN 	 FA 	 note
+to my name	دار و ندار	"ten dollars to my name" -> «همهٔ دار و ندارم ده دلار بود» (P37)
+establish ourselves	به جایی رسیدن	ambition idiom, not «خود را تثبیت کردن» (P40)
+make it	به جایی رسیدن	succeed in life; in "make it on time" -> «به موقع رسیدن»
+my turn came	نوبت به من رسید	(P42)
+on a budget	حواسم به خرجم بود / با پول کم	behavior clause, not «با بودجه» (P44)
+perfect timing	چه به‌موقع!	stock exclamation, don't calque (P13)
+break the ice	یخ مجلس را شکستن / سر صحبت را باز کردن
+once in a blue moon	سالی به دوازده ماه / خیلی به‌ندرت
+piece of cake	مثل آب خوردن
+hit the road	راه افتادن / بزن بریم
+get the hang of it	دستش آمدن	«کم‌کم دستم آمد»
+out of the blue	یک‌دفعه / بی‌مقدمه / از کجا نبود
+under the weather	ناخوش بودن / سرحال نبودن	physically unwell; NOT «دمغ» (that is sulky)
+cost an arm and a leg	کلی آب خوردن / خرج روی دست گذاشتن	«کلی آب خورد»
+call it a day	بس است برای امروز / تعطیلش کنیم
+make up your mind	تصمیمت را بگیر
+lose your temper	از کوره در رفتن
+keep an eye on	حواست به … باشد
+take it for granted	قدر ندانستن / بدیهی گرفتن
+get on someone's nerves	روی اعصاب رفتن
+a blessing in disguise	توفیق اجباری
+bite the bullet	دندان روی جگر گذاشتن	endure something unpleasant; NOT «دل به دریا زدن» (that is "take the plunge")
+take the plunge	دل به دریا زدن
+the last straw	کاسهٔ صبر را لبریز کردن
+speak of the devil	حلال‌زاده است
+butterflies in my stomach	دلم شور می‌زند / توی دلم رخت می‌شویند	nervous excitement, not clinical anxiety
+pull yourself together	خودت را جمع‌وجور کن
+in the same boat	هم‌درد بودن / همه در یک وضعیم
+beat around the bush	طفره رفتن / حاشیه رفتن
+better late than never	دیر رسیدن بهتر از هرگز نرسیدن است
+go on, now	برو دیگه / یالا برو	casual register (P8); «بزن بچاک» only if the speaker is gruff
+here you are	بفرما / بفرمایید	handing something over (NOT «اینک» = now/behold)
+no pain no gain	نابرده رنج گنج میسر نمی‌شود	Saadi; the standard equivalent
+sword of Damocles	شمشیر داموکلس / اجل معلق
+generation and corruption	کون و فساد	Aristotelian term (De Generatione et Corruptione)
+Father Confessor	کشیش اعتراف‌گیر	«اقرارنیوش» exists in some translations; rare

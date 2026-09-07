@@ -1,0 +1,69 @@
+# glossary.tsv  -  EN term  ->  preferred FA (collocation-aware).  Seed set.
+# Two tiers:  (1) collocation-aware standard choices (apply by default);
+#             (2) house-style coinages (OPT-IN): the standard term is the default; the
+#                 coinage is in the note and is used only if the user asks for house style.
+#                 Never let a coinage make the output read MORE foreign than the standard word.
+# Extend with Wiktionary (kaikki, CC-BY-SA) + English-Persian Word DB - see NOTICE at skill root.
+# format: EN 	 FA 	 note
+business partner	شریک تجاری	not «شریک کاری» (P4)
+business	کسب‌وکار	as a topic; not «تجارت» (P7)
+smoking room	اتاق دخانیات	not «اتاق سیگار» (P7)
+the lights went out	برق رفت	not «چراغ‌ها خاموش شد» (P12)
+comic books	کتاب کمیک / کتاب مصور	«کمیک» is established in modern Persian; not «طنز» (P33)
+grim	گرفته	mood; not «عبوس» (P4)
+graduate dormitory	خوابگاه دانشجویان تحصیلات تکمیلی	(P33)
+artichoke	کنگر فرنگی / آرتیشو	plain «کنگر» is a different plant (P23)
+plum	آلو	«آلوچه» only for the small sour kind (P23)
+recital	شعرخوانی	poetry recital (P14); music recital -> «رسیتال / اجرا»
+cargo vessel	کشتی باری
+arranged marriage	ازدواج سنتی
+landlady	صاحب‌خانه
+born-again	دوآتشه	zealous convert
+omen	نشانه / فال	"bad omen" -> «بدشگون / بدیمن»
+appointment	قرار / وقت
+schedule	برنامه / زمان‌بندی
+issue	مسئله / موضوع
+challenge	چالش
+community	جامعه
+neighborhood	محله
+downtown	مرکز شهر
+suburb	حومه
+commute	رفت‌وآمد
+deadline	مهلت / ضرب‌الاجل
+budget	بودجه
+mortgage	وام مسکن
+insurance	بیمه
+refund	بازپرداخت / استرداد
+receipt	رسید / فاکتور
+grocery store	خواروبارفروشی / سوپرمارکت
+sidewalk	پیاده‌رو
+wine	شراب	never soften to «نوشیدنی»
+red wine	شراب قرمز
+beer	آبجو
+liquor	مشروب
+whiskey	ویسکی
+cognac	کنیاک
+champagne	شامپاین
+gin	جین
+vodka	ودکا
+pork	گوشت خوک	never soften to bare «گوشت»
+bacon	بیکن
+ham	ژامبون خوک
+artificial intelligence	هوش مصنوعی	standard term (Persian Academy); house-style coinage: «هوشواره» (opt-in)
+AI	هوش مصنوعی	house-style coinage: «هوشواره» (opt-in)
+machine learning	یادگیری ماشین
+large language model	مدل زبانی بزرگ
+quote	نقل‌قول	a quotation; accepted neologism «گفتاورد» (opt-in)
+transportation	حمل‌ونقل / ترابری	«ترابری» is the official term, «حمل‌ونقل» the common one
+transaction	تراکنش	standard (esp. banking)
+transgender	تراجنسیتی	accepted term
+context	بافت / زمینه	«بافتار» in linguistics register; use with ezafe
+impression	برداشت / تأثیر	"first impression" -> «برداشت اول»; avoid loan «انطباع» in modern prose
+insecure	نامطمئن / دل‌نگران	emotional sense; «متزلزل» = "unstable" (weaker fit)
+lifestyle	سبک زندگی	common & natural; literary alt: «زیست‌شیوه»
+Christian	مسیحی	standard; «عیسوی» is archaic/literary
+manipulator	اهل دستکاری روانی / فریبکار	verb = «دستکاری روانی»; house-style coinage: «روان‌دستکاری» (opt-in)
+sugarcoat	لاپوشانی / شیرین جلوه دادن	house-style coinage: «شکرپیچ» (opt-in)
+situationship	شبه‌رابطه	no standard term; coinage is reasonable
+sapiosexual	هوش‌محرک	niche; no standard term
+military assets	ادوات نظامی	materiel / hardware

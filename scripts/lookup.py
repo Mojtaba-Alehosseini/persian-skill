@@ -3,9 +3,9 @@
 """lookup.py - build a compact terminology brief for a source text.
 
 Scans a source text against the bundled term banks and emits ONLY the entries that
-actually occur - the "terminology brief" the skill injects into the draft phase. This
-keeps context lean: the full idiom/glossary banks (potentially thousands of rows) live
-in TSV files and never enter model context; only the handful of relevant pairs do.
+actually occur: the "terminology brief" the skill uses in the draft phase. This
+keeps context lean. The full idiom/glossary banks live in TSV files and never enter
+model context; only the handful of relevant pairs do.
 
 USAGE
     python lookup.py source.txt                 # EN source -> EN/FA brief
@@ -20,6 +20,12 @@ import json
 import os
 import re
 import sys
+
+for _stream in (sys.stdout, sys.stderr, sys.stdin):
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
 
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 BANKS = [("idioms", "idioms.tsv"), ("glossary", "glossary.tsv")]
@@ -53,11 +59,16 @@ _LEMMA_SUFFIX = r"(?:es|s|ed|ing|d)?"
 def en_pattern(phrase):
     words = re.split(r"\s+", phrase.strip())
     escaped = [re.escape(w) for w in words]
+    last = words[-1]
     # Inflect the FINAL token so multi-word entries still match real text:
-    # "business partner" -> "business partners", "lose your temper" -> "...tempered".
-    # Applying it only to the last word keeps the match anchored and avoids false hits.
-    escaped[-1] += _LEMMA_SUFFIX
-    return re.compile(r"\b" + r"\s+".join(escaped) + r"\b", re.IGNORECASE)
+    # "business partner" -> "business partners". Acronyms (AI) and very short words
+    # are matched exactly, otherwise "AI" + "d" would hit "aid".
+    if len(last) > 2 and not last.isupper():
+        escaped[-1] += _LEMMA_SUFFIX
+        flags = re.IGNORECASE
+    else:
+        flags = 0 if last.isupper() else re.IGNORECASE
+    return re.compile(r"\b" + r"\s+".join(escaped) + r"\b", flags)
 
 
 def find_en(rows, text):
@@ -66,7 +77,7 @@ def find_en(rows, text):
 
 
 def find_fa(rows, text):
-    return [(en, fa, note) for en, fa, note in rows if fa and fa.split("/")[0] in text]
+    return [(en, fa, note) for en, fa, note in rows if fa and fa.split("/")[0].strip() in text]
 
 
 def dedup(hits):
