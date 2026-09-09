@@ -1,0 +1,1186 @@
+{
+ "run1": {
+  "01": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Idiomatic first-person Persian memoir sentence, natural literary rhythm."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses «۱۹۶۴» in Persian digits."
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«همهٔ دار و ندارم ... معادل ده دلار»; idiom kept, no added referent."
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Farsi yeh/keheh only; «همهٔ» correct; no ZWNJ context arises."
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Literary Persian: «ترک گفتم», «روزگار», «به‌شمار می‌آمد»."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses «۱۹۶۴» in Persian digits."
+    },
+    {
+     "n": 3,
+     "verdict": "FAIL",
+     "why": "Flat «تنها دارایی‌ام», no idiom; also folds certificate into possessions."
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Farsi yeh/keheh only; three ZWNJs correctly placed; no quotes needed."
+    }
+   ]
+  },
+  "02": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "برو دیگه/یالا، کتاباتو بخون: spoken forms, not calque"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Plain گفت used; no ornate manner verb"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Guillemets balanced, punctuation clean, no stray marks"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "آدم‌بزرگا، کتاباتو بخون، برو دیگه: idiomatic colloquial"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Tag flattened to گفت: with no manner verb"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Single balanced guillemet span, clean colon punctuation"
+    }
+   ]
+  },
+  "03": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Idiomatic English throughout; no calqued structures."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Renders it as 'the power went out'."
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "'the music cut off' is the natural equivalent."
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Beep, outage, music stop all present; nothing added."
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Idiomatic English throughout; no calqued structures."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Renders it as 'the power went out'."
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "'the music cut off' is the natural equivalent."
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Beep, outage, music stop all present; nothing added."
+    }
+   ]
+  },
+  "04": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«می‌رود» present with U+200C, not spaced or glued"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "«کتاب‌ها» joined by ZWNJ"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«بزرگ‌ترین» joined by ZWNJ"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Corrected text has zero U+064A or U+0643"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "«۱۹۶۴» present; no ASCII 1964 in output"
+    },
+    {
+     "n": 6,
+     "verdict": "PASS",
+     "why": "No space before ، or period; wording identical"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«می‌رود» present with U+200C, not spaced or glued"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "«کتاب‌ها» joined by ZWNJ"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«بزرگ‌ترین» joined by ZWNJ"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "No Arabic ya or kaf anywhere in answer"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "«۱۹۶۴» present; no ASCII 1964 in output"
+    },
+    {
+     "n": 6,
+     "verdict": "PASS",
+     "why": "No space before ، or period; wording identical"
+    }
+   ]
+  },
+  "05": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "کمرم را شکست، سرسام‌آور، قیمت گزاف: all genuine, accurately glossed"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "States no fixed calque exists; directs to natural equivalents instead"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "FAIL",
+     "why": "Headline «خون پدرم» idiom invented; دماغ فیل gloss misdescribed"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "Never warns against literal rendering; praises 'body-related punch' instead"
+    }
+   ]
+  },
+  "06": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Uses «یک بطری شراب»; wine present, not softened."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Ends with «او مست شد»; drunk explicitly rendered."
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Full sentence rendered; nothing omitted, softened, or censored."
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Uses «یک بطری شراب»; wine present, not softened."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Ends with «او مست شد»; drunk explicitly rendered."
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Complete faithful translation; no omission or euphemism."
+    }
+   ]
+  },
+  "07": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "ك/ي converted to ک/ی; کتاب‌ها joined with real ZWNJ (U+200C)"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Latin 2 and 1990 preserved; no Persian-Indic digits present"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Persian text unchanged in wording; only normalization, no translation"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "ك/ي converted to ک/ی; کتاب‌ها joined with real ZWNJ (U+200C)"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Latin 2 and 1990 preserved; no Persian-Indic digits present"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Persian text unchanged in wording; only normalization, no translation"
+    }
+   ]
+  },
+  "08": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Uses «سلام» with U+00AB/U+00BB guillemets"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "بود؛ and بود؟ with no space before, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "ک/ی correct, ZWNJ in کتاب‌ها, ۱۰ Persian digits"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "English sentence identical, straight quotes retained"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, untranslated"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Uses «سلام» with U+00AB/U+00BB guillemets"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "بود؛ and بود؟ with no space before, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "ک/ی correct, ZWNJ in کتاب‌ها, ۱۰ Persian digits"
+    },
+    {
+     "n": 4,
+     "verdict": "FAIL",
+     "why": "Changed straight quotes to curly “ ”; sentence not unchanged"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, untranslated"
+    }
+   ]
+  },
+  "09": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "FAIL",
+     "why": "Commits to a translation first; offers only metric, not full option set"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "91 cm and «نزدیک به یک متر» are accurate and consistent"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«آن زمستان ... برف بارید» is natural idiomatic Persian"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Asks first, explicitly offering metric, original, and both"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "«حدود یک متر» used consistently in both options"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«برف باریده بود» phrasing is idiomatic Persian throughout"
+    }
+   ]
+  },
+  "10": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Rewrite avoids all seven banned phrases; only commentary quotes them."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Three features, fast/simple/efficient, expert team, UX improvement all present."
+    },
+    {
+     "n": 3,
+     "verdict": "FAIL",
+     "why": "Adds causal claim «همین موضوع باعث می‌شود» linking team expertise to UX gain."
+    },
+    {
+     "n": 4,
+     "verdict": "FAIL",
+     "why": "«سریع است، ساده است و کارآمد» after colon is awkward, unbalanced list."
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Rewrite free of all banned phrases; only commentary cites them."
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Keeps three features, speed/simplicity/efficiency, expert team, better UX."
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "No added facts, numbers, or claims beyond the source content."
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Uses دارد/است/کرده است; fluent, idiomatic modern Persian throughout."
+    }
+   ]
+  },
+  "11": {
+   "A": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«را بیرون کشیدند و تیرباران کردند» — impersonal third-plural active, no passive"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "Answers the negative question with «بله» instead of «چرا»"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, «» guillemets used, natural spoken dialogue with tags"
+    }
+   ],
+   "B": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«را بیرون کشاندند و تیرباران کردند» — third-plural active, no «شد» passive"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses «چرا، هست.» as required affirmative to negative question"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, «» used, dialogue idiomatic though tags postposed"
+    }
+   ]
+  }
+ },
+ "run2": {
+  "01": {
+   "1": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Literary Persian memoir sentence, understated narrative cadence"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses ۱۹۶۴ in Persian digits"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«همهٔ دار و ندارم», no added referent, not flat"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Persian yeh/kaf only; guillemets used; no ZWNJ required"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«ترک گفتم» literary register throughout"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses ۱۹۶۴ in Persian digits"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«تمام دار و ندارم»; sum is source's own referent"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "No Arabic ي/ك; no quotes; no ZWNJ contexts"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Literary: «روزگار», «به‌شمار می‌آمد», memoir tone"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses ۱۹۶۴ in Persian digits"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«تنها دارایی‌ام» equals 'all I owned'; nothing added"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Clean Persian letters; ZWNJ correct in three spots"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Literary memoir syntax ending on «ترک گفتم»"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses ۱۹۶۴ in Persian digits"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«تمام دار و ندارم»; no invented referent, not flat"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Persian letters only; رشتهٔ correct; no ZWNJ needed"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Persian output is literary memoir register"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses ۱۹۶۴ in Persian digits"
+    },
+    {
+     "n": 3,
+     "verdict": "FAIL",
+     "why": "«به نام من» calque implies registered title; no idiom"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Output clean; ZWNJ in دارایی‌ای; no quotes inside"
+    }
+   ],
+   "6": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سال ۱۹۶۴ بود که» scene-setting literary cadence"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses ۱۹۶۴ in Persian digits"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "«دار و ندارم» used, faithful, no added referent"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Clean letters, guillemets for quotes, ZWNJ correct"
+    }
+   ]
+  },
+  "05": {
+   "1": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "کمرشکن، کمرم را شکست، آب خورد — all genuine, correctly glossed"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "States «یک دست و یک پا» literal version is meaningless in Persian"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "کمرم را شکست، سرسام‌آور، قیمت گزاف — genuine, accurate glosses"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "Only says no fixed calque exists; never flags literal wrong"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "کمرم رو شکست and others genuine with accurate glosses"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Says literal «یک بازو و یک پا» would sound bizarre"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "قیمتش کمرشکن بود، کمرم رو شکست — genuine, glossed correctly"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "No mention that word-for-word translation would be wrong"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "کمرشکن plus pocket expressions; genuine usage, accurate literal glosses"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Explicitly warns against calque «به قیمت یک دست و یک پا»"
+    }
+   ],
+   "6": [
+    {
+     "n": 1,
+     "verdict": "FAIL",
+     "why": "Headline «خون پدرم» and «دماغ فیل» versions invented/misglossed"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "Never flags that literal translation would be wrong"
+    }
+   ]
+  },
+  "08": {
+   "1": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سلام» guillemets U+00AB/U+00BB present"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "U+061B and U+061F, no preceding space, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "U+06A9, U+06CC, ZWNJ in کتاب‌ها, ۱۰ present"
+    },
+    {
+     "n": 4,
+     "verdict": "FAIL",
+     "why": "Straight quotes changed to curly “ ” U+201C/U+201D"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, no translation"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سلام» guillemets U+00AB/U+00BB present"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "U+061B and U+061F, no preceding space, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "U+06A9, U+06CC, ZWNJ in کتاب‌ها, ۱۰ present"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Latin comma, straight quotes, question mark all kept"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, no translation"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سلام» guillemets U+00AB/U+00BB present"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "U+061B and U+061F, no preceding space, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "U+06A9, U+06CC, ZWNJ in کتاب‌ها, ۱۰ present"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Latin comma, straight quotes, question mark all kept"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, no translation"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سلام» guillemets U+00AB/U+00BB present"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "U+061B and U+061F, no preceding space, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "U+06A9, U+06CC, ZWNJ in کتاب‌ها, ۱۰ present"
+    },
+    {
+     "n": 4,
+     "verdict": "FAIL",
+     "why": "Straight quotes changed to curly “ ” U+201C/U+201D"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, no translation"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سلام» guillemets U+00AB/U+00BB present"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "U+061B and U+061F, no preceding space, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "U+06A9, U+06CC, ZWNJ in کتاب‌ها, ۱۰ present"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Latin comma, straight quotes, question mark all kept"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, no translation"
+    }
+   ],
+   "6": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "«سلام» guillemets U+00AB/U+00BB present"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "U+061B and U+061F, no preceding space, one after"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "U+06A9, U+06CC, ZWNJ in کتاب‌ها, ۱۰ present"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Latin comma, straight quotes, question mark all kept"
+    },
+    {
+     "n": 5,
+     "verdict": "PASS",
+     "why": "Persian wording identical to source, no translation"
+    }
+   ]
+  },
+  "09": {
+   "1": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Delivers both, explicitly names metric-only and original-only options"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Three feet given as حدود یک متر; accurate and consistent"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "آن زمستان ... برف بارید is natural Persian"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "verdict": "FAIL",
+     "why": "Bare output; never asks or offers unit options"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "حدود یک متر for three feet is sensible"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Idiomatic snowfall phrasing with برف بارید"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Flags imperial unit, explicitly offers metric alternative rendering"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "91 cm and نزدیک به یک متر are correct, consistent"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Both variants read as natural Persian"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "verdict": "FAIL",
+     "why": "Silently keeps feet; no question, no options offered"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "No conversion attempted, so nothing inaccurate"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "آن زمستان سه فوت برف بارید is idiomatic"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "verdict": "FAIL",
+     "why": "Translation plus transliteration only; unit choice never surfaced"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "No conversion made; nothing numerically wrong"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Natural Persian phrasing and correct transliteration"
+    }
+   ],
+   "6": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Asks first, offering metric, original, and both variants"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "حدود یک متر used consistently in options (a) and (c)"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "برف باریده بود phrasing is well-formed, natural Persian"
+    }
+   ]
+  },
+  "10": {
+   "1": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Rewrite free of all seven banned items"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Three features, speed/simplicity/efficiency, team, UX kept"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Only intensity paraphrase of important role"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Simple darad/kardeh verbs, natural modern Persian"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "No banned terms; uses dar kol not dar nahayat"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "All four facts present and intact"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Only discourse filler; no new factual claim"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Plain darad/ast/budeh, conversational and natural"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Rewrite clean; banned words only quoted in commentary"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Three features, all traits, team, UX preserved"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Rewrite adds nothing beyond source content"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Simple darad/anjam dadeh; fluent modern Persian"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Contains none of the banned constructions"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Every fact retained concisely"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Nothing added beyond the original claims"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Uses darad, ast, tarrahi kardeh; natural"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Persian rewrite free of banned items"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Three features, traits, team, UX all kept"
+    },
+    {
+     "n": 3,
+     "verdict": "FAIL",
+     "why": "Adds causal claim: team design causes UX gain"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Simple verbs; reads naturally despite mixed register"
+    }
+   ],
+   "6": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Rewrite avoids all seven banned expressions"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Three features, traits, expert team, UX retained"
+    },
+    {
+     "n": 3,
+     "verdict": "FAIL",
+     "why": "Invents causal link via hamin baes mishavad"
+    },
+    {
+     "n": 4,
+     "verdict": "PASS",
+     "why": "Plain darad/budeh/behtar konad; natural flow"
+    }
+   ]
+  },
+  "11": {
+   "1": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Active third-plural کشاندند/تیرباران کردند; no passive"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Answers negative question with چرا، هست"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, guillemets used, natural spoken Persian"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "را بیرون کشیدند و تیرباران کردند; impersonal active"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses چرا as affirmative"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, guillemets, زن/مرد attributions read naturally"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "را بیرون کشیدند و تیرباران کردند; impersonal active"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses چرا as affirmative"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, guillemets, او attributions acceptable Persian"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "را بیرون کشیدند و تیرباران کردند; impersonal active"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "Uses بله, not چرا, for negative question"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, guillemets, natural spoken Persian"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "را بیرون کشیدند و تیرباران کردند; impersonal active"
+    },
+    {
+     "n": 2,
+     "verdict": "FAIL",
+     "why": "Uses بله, not چرا, for negative question"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, guillemets, او attributions acceptable Persian"
+    }
+   ],
+   "6": [
+    {
+     "n": 1,
+     "verdict": "PASS",
+     "why": "Active third-plural کشاندند/تیرباران کردند; no passive"
+    },
+    {
+     "n": 2,
+     "verdict": "PASS",
+     "why": "Uses چرا as affirmative"
+    },
+    {
+     "n": 3,
+     "verdict": "PASS",
+     "why": "Facts intact, guillemets, زن/مرد attributions read naturally"
+    }
+   ]
+  }
+ }
+}

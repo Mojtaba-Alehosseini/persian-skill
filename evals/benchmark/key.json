@@ -1,0 +1,98 @@
+{
+ "run1_AB": {
+  "01": {
+   "A": "skill",
+   "B": "base"
+  },
+  "02": {
+   "A": "skill",
+   "B": "base"
+  },
+  "03": {
+   "A": "base",
+   "B": "skill"
+  },
+  "04": {
+   "A": "base",
+   "B": "skill"
+  },
+  "05": {
+   "A": "skill",
+   "B": "base"
+  },
+  "06": {
+   "A": "skill",
+   "B": "base"
+  },
+  "07": {
+   "A": "base",
+   "B": "skill"
+  },
+  "08": {
+   "A": "skill",
+   "B": "base"
+  },
+  "09": {
+   "A": "base",
+   "B": "skill"
+  },
+  "10": {
+   "A": "base",
+   "B": "skill"
+  },
+  "11": {
+   "A": "base",
+   "B": "skill"
+  }
+ },
+ "run2_candidate_order": {
+  "01": [
+   "skill",
+   "skill",
+   "base",
+   "skill",
+   "base",
+   "base"
+  ],
+  "05": [
+   "skill",
+   "skill",
+   "base",
+   "base",
+   "skill",
+   "base"
+  ],
+  "08": [
+   "base",
+   "base",
+   "skill",
+   "base",
+   "skill",
+   "skill"
+  ],
+  "09": [
+   "skill",
+   "skill",
+   "base",
+   "base",
+   "base",
+   "skill"
+  ],
+  "10": [
+   "skill",
+   "base",
+   "skill",
+   "skill",
+   "base",
+   "base"
+  ],
+  "11": [
+   "skill",
+   "skill",
+   "base",
+   "base",
+   "base",
+   "skill"
+  ]
+ }
+}
